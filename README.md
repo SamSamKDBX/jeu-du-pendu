@@ -1,5 +1,5 @@
 # Jeu du Pendu en JavaFX
-/!\ ATTENTION /!\ Ce jeu est compilé pour Windows. Pour l'utiliser sur Linux ou MacOS il faudra le recompiler.
+⚠️ ATTENTION Ce jeu est compilé pour Windows. Pour l'utiliser sur Linux ou MacOS il faudra le recompiler. ⚠️
 
 Pour lancer le jeu il faudra obligatoirement avoir installé Java 21.
 
