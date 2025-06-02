@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.CheckMenuItem?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.RadioMenuItem?>
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="460.0" minWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ihm.pendu.view.MainMenuController">
+   <center>
+      <VBox spacing="20.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="Bienvenu sur le jeu du pendu !">
+               <font>
+                  <Font name="System Bold" size="17.0" />
+               </font>
+            </Label>
+            <Label text="Options" />
+            <CheckBox fx:id="modeTriche" mnemonicParsing="false" text="Mode Triche" />
+            <Label text="Catégories" />
+            <RadioButton fx:id="rbToutes" mnemonicParsing="false" selected="true" text="Toutes les catégories">
+               <toggleGroup>
+                  <ToggleGroup fx:id="Categorie" />
+               </toggleGroup>
+            </RadioButton>
+            <GridPane hgap="10.0" minHeight="50.0" vgap="10.0">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <RadioButton fx:id="rbJavaFX" mnemonicParsing="false" text="JavaFX" toggleGroup="$Categorie" />
+                  <RadioButton fx:id="rbAnimaux" mnemonicParsing="false" text="Animaux" toggleGroup="$Categorie" GridPane.columnIndex="1" />
+                  <RadioButton fx:id="rbFruits" mnemonicParsing="false" text="Fruits" toggleGroup="$Categorie" GridPane.columnIndex="2" />
+                  <RadioButton fx:id="rbCouleurs" mnemonicParsing="false" text="Couleurs" toggleGroup="$Categorie" GridPane.rowIndex="1" />
+                  <RadioButton fx:id="rbPays" mnemonicParsing="false" text="Pays" toggleGroup="$Categorie" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                  <RadioButton fx:id="rbMetiers" mnemonicParsing="false" text="Métiers" toggleGroup="$Categorie" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+               </children>
+            </GridPane>
+            <GridPane>
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <Slider fx:id="sliderLettres" blockIncrement="1.0" majorTickUnit="1.0" max="12.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" min="4.0" snapToTicks="true" GridPane.rowIndex="1" />
+                  <Slider fx:id="sliderErreurMax" blockIncrement="1.0" majorTickUnit="1.0" max="22.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" snapToTicks="true" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                  <Label maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="Nombre de lettres" />
+                  <Label maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="Nombre de coups (0 pour infini)" GridPane.columnIndex="1" />
+                  <Label fx:id="nbLettres" alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="nbLettres" GridPane.rowIndex="2" />
+                  <Label fx:id="nbErrMax" alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="nbCoupsMax" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+               </children>
+            </GridPane>
+            <VBox spacing="5" />
+            <Button maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#actionNouvelPartie" text="Nouvelle pertie">
+               <VBox.margin>
+                  <Insets left="20.0" right="20.0" />
+               </VBox.margin></Button>
+         </children>
+         <padding>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </padding>
+      </VBox>
+   </center>
+   <top>
+      <MenuBar BorderPane.alignment="CENTER">
+        <menus>
+            <Menu mnemonicParsing="false" text="Paramètres">
+              <items>
+                  <CheckMenuItem fx:id="desactiverSonEndGame" mnemonicParsing="false" text="Désactiver son fin de partie" />
+              </items>
+            </Menu>
+          <Menu mnemonicParsing="false" text="Thème">
+               <items>
+                  <RadioMenuItem fx:id="lightMode" mnemonicParsing="false" onAction="#actionChangerTheme" text="Light">
+                     <toggleGroup>
+                        <ToggleGroup fx:id="Theme" />
+                     </toggleGroup>
+                  </RadioMenuItem>
+                  <RadioMenuItem fx:id="darkMode" mnemonicParsing="false" onAction="#actionChangerTheme" selected="true" text="Dark" toggleGroup="$Theme" />
+               </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+   </top>
+</BorderPane>

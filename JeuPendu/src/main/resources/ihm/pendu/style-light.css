@@ -1,0 +1,271 @@
+/* Fond général */
+.root,
+.border-pane {
+    -fx-background-color: #f5f3ff;
+    background-color: #f5f3ff;
+}
+
+/* Fond des VBox */
+.vbox {
+    -fx-background-color: #ede7f6;
+    background-color: #ede7f6;
+    -fx-padding: 20;
+    padding: 20px;
+}
+
+/* Style général des labels */
+.label {
+    -fx-text-fill: #3e3065;
+    -fx-font-family: "Segoe UI", "Arial", sans-serif;
+    font-family: "Segoe UI", "Arial", sans-serif;
+}
+
+/* Titre principal */
+.label-main-title {
+    -fx-font-size: 22px;
+    font-size: 22px;
+    -fx-font-weight: bold;
+    font-weight: bold;
+    -fx-text-fill: #7e57c2;
+}
+
+/* Sous-titre */
+.label-subtitle {
+    -fx-font-size: 16px;
+    font-size: 16px;
+    -fx-text-fill: #9575cd;
+}
+
+/* Label HP */
+.label-hp-label {
+    -fx-text-fill: #7e57c2;
+    -fx-font-weight: bold;
+    font-weight: bold;
+    -fx-font-size: 16px;
+    font-size: 16px;
+}
+
+/* Menu bar */
+.menu-bar {
+    -fx-background-color: #ede7f6;
+    background-color: #ede7f6;
+    -fx-border-color: #b39ddb;
+    border-color: #b39ddb;
+    -fx-border-width: 1;
+    border-width: 1px;
+}
+/* Menu bar menu */
+.menu-bar .menu {
+    -fx-text-fill: #3e3065;
+    -fx-font-size: 14px;
+    font-size: 14px;
+}
+/* Menu bar menu item */
+.menu-bar .menu-item {
+    -fx-text-fill: #3e3065;
+    -fx-font-size: 14px;
+    font-size: 14px;
+    -fx-padding: 5 10 5 10;
+    padding: 5px 10px 5px 10px;
+}
+/* Menu bar menu item hover */
+.menu-bar .menu-item:hover {
+    -fx-background-color: #d1c4e9;
+    background-color: #d1c4e9;
+    -fx-text-fill: #4527a0;
+    color: #4527a0;
+}
+/* Menu bar menu item selected */
+.menu-bar .menu-item:selected {
+    -fx-background-color: #b39ddb;
+    background-color: #b39ddb;
+    -fx-text-fill: #4527a0;
+    color: #4527a0;
+}
+/* Menu bar menu item disabled */
+.menu-bar .menu-item:disabled {
+    -fx-text-fill: #bdbdbd;
+    color: #bdbdbd;
+}
+/* Menu bar menu item disabled hover */
+.menu-bar .menu-item:disabled:hover {
+    -fx-background-color: #ede7f6;
+    background-color: #ede7f6;
+    -fx-text-fill: #bdbdbd;
+    color: #bdbdbd;
+}
+/* Style des boutons de la barre de menu */
+.menu-bar .button {
+    -fx-background-color: #b39ddb;
+    background-color: #b39ddb;
+    -fx-text-fill: #4527a0;
+    color: #4527a0;
+    -fx-font-size: 14px;
+    font-size: 14px;
+    -fx-padding: 5 10 5 10;
+    padding: 5px 10px 5px 10px;
+    -fx-border-radius: 8;
+    border-radius: 8px;
+}
+.menu-bar .button:hover {
+    -fx-background-color: #9575cd;
+    background-color: #9575cd;
+}
+/* Style des boutons de la barre de menu sélectionnés */
+.menu-bar .button:selected {
+    -fx-background-color: #9575cd;
+    background-color: #9575cd;
+    -fx-text-fill: #fff;
+    color: #fff;
+}
+/* Style des boutons de la barre de menu désactivés */
+.menu-bar .button:disabled {
+    -fx-text-fill: #bdbdbd;
+    color: #bdbdbd;
+    -fx-background-color: #ede7f6;
+    background-color: #ede7f6;
+}
+
+/* Boutons */
+.button {
+    -fx-background-color: #b39ddb;
+    background-color: #b39ddb;
+    -fx-text-fill: #4527a0;
+    color: #4527a0;
+    -fx-font-size: 18px;
+    font-size: 18px;
+    -fx-font-weight: bold;
+    font-weight: bold;
+    -fx-background-radius: 8;
+    -fx-border-radius: 8;
+    border-radius: 8px;
+    -fx-border-color: #9575cd;
+    border-color: #9575cd;
+    -fx-border-width: 2;
+    border-width: 2px;
+    -fx-cursor: hand;
+    cursor: pointer;
+    -fx-effect: dropshadow(gaussian, #b39ddb, 4, 0.2, 0, 2);
+    -fx-padding: 8 0 8 0;
+    padding: 8px 0 8px 0;
+    -fx-min-width: 40px;
+    min-width: 40px;
+}
+
+.button:hover {
+    -fx-background-color: #9575cd;
+    background-color: #9575cd;
+    -fx-text-fill: #fff;
+    color: #fff;
+}
+
+/* CheckBox */
+.check-box .box {
+    -fx-border-color: #b39ddb;
+    border-color: #b39ddb;
+    -fx-border-width: 2;
+    border-width: 2;
+    -fx-background-color: #ede7f6;
+    background-color: #ede7f6;
+}
+
+.check-box:selected .box {
+    -fx-background-color: #9575cd;
+    background-color: #9575cd;
+}
+
+.check-box .text {
+    -fx-text-fill: #4527a0;
+    -fx-fill: #4527a0;
+    fill: #4527a0;
+    color: #4527a0;
+}
+
+/* Radio Button */
+.radio-button .text {
+    -fx-text-fill: #4527a0;
+    -fx-fill: #4527a0;
+    fill: #4527a0;
+    color: #4527a0;
+}
+
+/* Slider */
+.slider .track {
+    -fx-background-color: #d1c4e9;
+    background-color: #d1c4e9;
+}
+
+.slider .thumb {
+    -fx-background-color: #9575cd;
+    background-color: #9575cd;
+}
+
+/* GridPane */
+.grid-pane {
+    -fx-background-color: transparent;
+    background-color: transparent;
+    -fx-padding: 10;
+    padding: 10px;
+}
+
+/* Style général des popups JavaFX */
+.dialog-pane {
+    -fx-background-color: #f5f3ff;
+    background-color: #f5f3ff;
+}
+
+.dialog-pane .label {
+    -fx-text-fill: #3e3065;
+    -fx-font-size: 16px;
+    font-size: 16px;
+}
+
+.dialog-pane .button {
+    -fx-background-color: #b39ddb;
+    background-color: #b39ddb;
+    -fx-text-fill: #4527a0;
+    color: #4527a0;
+    -fx-font-weight: bold;
+    font-weight: bold;
+    -fx-background-radius: 8;
+    -fx-border-radius: 8;
+    border-radius: 8px;
+    -fx-border-color: #9575cd;
+    border-color: #9575cd;
+    -fx-border-width: 2;
+    border-width: 2px;
+}
+
+.dialog-pane .button:hover {
+    -fx-background-color: #9575cd;
+    background-color: #9575cd;
+    -fx-text-fill: #fff;
+    color: #fff;
+}
+
+.custom-dialog {
+    -fx-background-color: #f5f3ff;
+    background-color: #f5f3ff;
+}
+
+/* Change la couleur de fond du menu déroulant */
+.menu-bar .context-menu {
+    -fx-background-color: #ede7f6;
+    background-color: #ede7f6;
+}
+
+/* Change la couleur du texte des items, y compris CheckMenuItem */
+.menu-bar .menu-item,
+.menu-bar .check-menu-item {
+    -fx-text-fill: #3e3065;
+    color: #3e3065;
+}
+
+/* Change la couleur du texte des items sélectionnés */
+.menu-bar .menu-item:selected,
+.menu-bar .check-menu-item:selected {
+    -fx-background-color: #b39ddb;
+    background-color: #b39ddb;
+    -fx-text-fill: #4527a0;
+    color: #4527a0;
+}
